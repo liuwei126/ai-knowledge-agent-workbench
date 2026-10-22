@@ -1,0 +1,29 @@
+{
+  "icp": {
+    "description": "理想客户画像：面向中大型制造业/物流/零售企业的 B2B 数字化服务",
+    "target_industries": ["制造业", "物流", "零售", "新能源", "医疗器械"],
+    "adjacent_industries": {
+      "汽车零部件": "制造业",
+      "电商": "零售",
+      "供应链": "物流",
+      "快消": "零售"
+    },
+    "target_regions": ["上海", "苏州", "宁波", "杭州", "南京", "无锡", "嘉兴"],
+    "scale_range": [200, 5000],
+    "relevance_keywords": ["数字化", "供应链", "售后", "门店", "仓储", "排产", "质检", "经销商"]
+  },
+  "weights": {
+    "industry": 30,
+    "scale": 25,
+    "region": 15,
+    "business_relevance": 30
+  },
+  "thresholds": {
+    "high": 80,
+    "mid": 60
+  },
+  "pipeline": {
+    "max_batch": 20,
+    "info_incomplete_score": null
+  }
+}

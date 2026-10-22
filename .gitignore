@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# 运行时数据（mock 文档由代码内置，启动时自动 seed）
+backend/app/data/
+
+# 环境变量
+.env
+*.env.local
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo/
+
+# 日志
+*.log
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

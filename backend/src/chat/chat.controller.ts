@@ -1,0 +1,1 @@
+import{Body,Controller,Post,Req}from'@nestjs/common';import{ApiTags}from'@nestjs/swagger';import{ChatService}from'./chat.service';@ApiTags('chat')@Controller('api')export class ChatController{constructor(private s:ChatService){}@Post('chat')chat(@Body()b,@Req()r){return this.s.chat(b,r.user)}@Post('feedback')feedback(@Body()b){return this.s.feedback(b)}}
